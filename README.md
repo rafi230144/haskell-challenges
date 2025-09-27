@@ -23,3 +23,8 @@ If you think there's a problem with a challenge (ambiguous wording, invalid assu
 Currently contributions of new challenges are not accepted as I'm not sure where this whole thing is going and how I want to evolve it.
 
 You're encouraged to post a solution to a challenge. When you post a solution please do that via a link rather than inline code in order not to spoil the fun for others.
+
+---
+
+*N.b.*: So far only the following challenges are solved in this fork:
+ - j1-lazy-foldrM

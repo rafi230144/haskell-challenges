@@ -27,7 +27,7 @@ data Peano where
 -}
 take' :: forall a. Peano -> [a] -> [a]
 take' = \cases
-    Zero _               -> []
+    Zero      _          -> []
     (Succ n') ~(a : sa') -> a : take' n' sa'
 
 {- | Identical to 'Data.Bifunctor.first'\;
@@ -48,7 +48,7 @@ reverse' =
         reverse'A = \ n ra -> \case
             []      -> (n, ra)
             a : sa' -> fstmap Succ $ reverse'A n (a : ra) sa'
-    in  \sa -> let (n, ra) = reverse'A Zero [] sa in
+    in  \ sa -> let (n, ra) = reverse'A Zero [] sa in
             take' n ra
 
 

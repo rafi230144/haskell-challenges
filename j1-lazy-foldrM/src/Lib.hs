@@ -27,7 +27,7 @@ data Peano where
 -}
 take' :: forall a. Peano -> [a] -> [a]
 take' = \cases
-    Zero _               -> []
+    Zero      _          -> []
     (Succ n') ~(a : sa') -> a : take' n' sa'
 
 {- | Identical to 'Data.Bifunctor.first'\;
